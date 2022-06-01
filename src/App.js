@@ -1,24 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import MainContent from './maincontent';
+import polls from './polls';
+import Sidebar from './sidebar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className='max-w-6xl mx-auto mt-32 mb-20 flex flex-col items-center md:flex-row md:justify-between px-10'>
+        <Sidebar/>
+        <MainContent/>
+      </div>
   );
 }
 
